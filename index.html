@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Видео заднего плана -->
+    <video class="background-video" autoplay loop muted>
+        <source src="ds.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Музыка заднего плана -->
+    <audio id="background-music" autoplay loop>
+        <source src="The Mighty Rio Grande.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Контент сайта -->
+    <div class="content">
+        <div class="header">
+            <h1>Добро пожаловать в мое портфолио</h1>
+            <nav>
+                <a href="https://qukli.github.io/websit_eportfolio/" target="_blank">Резюме</a>
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+
+        <div class="section" id="about">
+            <h2>Обо мне</h2>
+            <p>Привет, я [Ваше имя], увлеченный аналитик данных с опытом работы в Python, SQL и науке о данных. Добро
+                пожаловать в мое портфолио.</p>
+            <button id="back-button-about" class="hidden">Назад</button>
+        </div>
+
+        <div class="break-section"></div> <!-- Промежуточный блок -->
+
+        <div class="section" id="projects">
+            <h2>Проекты</h2>
+            <p>Вот некоторые из проектов, над которыми я работал:</p>
+            <ul class="project-list">
+                <li class="project-item">Интерактивный дашборд для анализа продажи пиццы (web version): <a
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZGNjNTcwZGMtZjAxNy00OGM4LWI5ZmMtZTc0YTZjOTRiM2YyIiwidCI6ImNjYjlkM2VjLTg1YWQtNDY4Ny1hNDA0LTIxMDAwOGU3MDkyYyIsImMiOjl9"
+                        target="_blank">Посмотреть отчет (Power BI)</a></li>
+                <li class="project-item">Исследование больших объемов данных с использованием Python: <a
+                        href="https://colab.research.google.com/drive/1vFkvSyLsRitJSGEJ1jQA6__akMZI4RT5?usp=sharing"
+                        target="_blank">Смотреть файл исследования</a></li>
+            </ul>
+            <button id="back-button-projects" class="hidden">Назад</button>
+        </div>
+
+        <div class="break-section"></div> <!-- Промежуточный блок -->
+
+        <div class="section" id="contact">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной по адресу [Ваш Email] или найдите меня в [LinkedIn/Другой Платформе].</p>
+            <button id="back-button-contact" class="hidden">Назад</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
